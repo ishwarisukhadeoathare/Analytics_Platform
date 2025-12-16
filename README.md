@@ -65,4 +65,44 @@ The project consists of a **frontend** built with HTML, CSS, and JavaScript (Plo
 ---
 
 ## Project Structure
+quant/
+│
+├── index.html # Main frontend file
+├── .venv/ # Python virtual environment
+├── backend/
+│ ├── app.py # Backend API & WebSocket management
+│ ├── analytics.py # Statistical & financial analytics functions
+│ ├── data_store.py # Data buffering and storage
+│ └── requirements.txt # Python dependencies
 
+---
+
+## Installation
+
+1. **Clone the repository**
+
+```bash
+git clone <repository_url>
+cd quant
+Setup Python environment
+
+cd backend
+python -m venv .venv
+# Activate virtual environment
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Open the frontend
+
+Open index.html in your browser (no additional server required for static HTML/JS frontend).
+
+For full WebSocket streaming, ensure the backend server (app.py) is running.
+
+Run backend server
+python -m uvicorn app:app --reload 
