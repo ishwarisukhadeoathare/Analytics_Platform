@@ -76,8 +76,11 @@ quant/
 ├── backend/
 
 │ ├── app.py # Backend API & WebSocket management
+
 │ ├── analytics.py # Statistical & financial analytics functions
+
 │ ├── data_store.py # Data buffering and storage
+
 │ └── requirements.txt # Python dependencies
 
 ---
@@ -111,4 +114,5 @@ For full WebSocket streaming, ensure the backend server (app.py) is running.
 
 Run backend server
 python -m uvicorn app:app --reload 
+
 
