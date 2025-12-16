@@ -66,10 +66,15 @@ The project consists of a **frontend** built with HTML, CSS, and JavaScript (Plo
 
 ## Project Structure
 quant/
+
 │
+
 ├── index.html # Main frontend file
+
 ├── .venv/ # Python virtual environment
+
 ├── backend/
+
 │ ├── app.py # Backend API & WebSocket management
 │ ├── analytics.py # Statistical & financial analytics functions
 │ ├── data_store.py # Data buffering and storage
@@ -106,3 +111,4 @@ For full WebSocket streaming, ensure the backend server (app.py) is running.
 
 Run backend server
 python -m uvicorn app:app --reload 
+
